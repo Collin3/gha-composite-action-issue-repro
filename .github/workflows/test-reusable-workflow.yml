@@ -1,0 +1,13 @@
+name: 'Test reusable workflow with symlink in the repository'
+
+on:
+  workflow_call:
+
+jobs:
+  testing:
+    name: Test reusable workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        shell: bash
+        run: echo "doing things."
