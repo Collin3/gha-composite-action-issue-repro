@@ -1,0 +1,9 @@
+name: 'Test composite action with symlink in the repository'
+description: 'trying to reproduce bug we have been seeing'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Testing symlink issue
+      shell: bash
+      run: echo "doing things."
